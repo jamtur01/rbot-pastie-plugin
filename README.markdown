@@ -1,10 +1,9 @@
-# pastie plugin for Rbot
-# Copyright @ 2010 James Turnbull <james@lovedthanlost.net>
-# Licensed: GPLv3
-# Needs to go in the plugins dir for rbot
-
 Pastie Plugin for Rbot
 ======================
+
+Copyright @2010 James Turnbull <james@lovedthanlost.net>
+
+Licensed: GPLv3
 
 Requires
 --------
@@ -26,9 +25,9 @@ Usage
 
 1.  Ask the bot to provide you with a Pastie.org URL with one of the following commands:
 
-  botname: pastie
-  botname: pastie me
-  botname: url me
+  * `botname: pastie`
+  * `botname: pastie me`
+  * `botname: url me`
 
 2.  The bot will send you a private message with a Pastie.org URL.
 
