@@ -22,15 +22,15 @@ class PastiePlugin < Plugin
 		return unless m.message =~ /(pastie|pastie me|url me)/
 
                 if m.message =~ /^(\S+)[:,]/
-	          addressee = "#{$1}: "
+	          addressee = "#{$1}"
                 else
-		  addressee = "#{m.sourcenick}: "
+		  addressee = m.sourcenick
 	        end
 		
                 pastie
  
-                m.reply "#{addressee} Your pastie URL " + @url  
-	end
+	        @bot.say "#{addressee}", "Your pastie URL is " + @url
+        end
 
 	private
         def pastie
